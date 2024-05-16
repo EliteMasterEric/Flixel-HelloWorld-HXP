@@ -1,0 +1,33 @@
+package;
+
+import hxp.*;
+import lime.tools.*;
+import sys.FileSystem;
+
+@:nullSafety
+class HelloWorldProject extends HXProject {
+    public function new() {
+        super();
+
+		this.meta.title = "Flixel Hello World";
+		this.meta.version = "0.0.1";
+		this.meta.company = "HaxeFlixel";
+
+		this.app.main = "Main";
+		this.app.file = "Flixel-HelloWorld";
+		this.app.preloader = "flixel.system.FlxPreloader";
+
+        this.window.fps = 60;
+        this.window.width = 640;
+        this.window.height = 480;
+        this.window.background = 0xFF000000;
+        this.window.hardware = true;
+        this.window.vsync = false;
+        
+        this.sources.push("source");
+
+        this.haxelibs.push(new Haxelib("lime", ""));
+        this.haxelibs.push(new Haxelib("openfl", ""));
+        this.haxelibs.push(new Haxelib("flixel", ""));
+    }
+}

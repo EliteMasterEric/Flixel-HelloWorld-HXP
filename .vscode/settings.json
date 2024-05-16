@@ -1,0 +1,16 @@
+{
+	"search.exclude": {
+		"export/**/*.hx": true
+	},
+	"[haxe]": {
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true,
+		"editor.codeActionsOnSave": {
+			"source.sortImports": "explicit"
+		}
+	},
+	"haxe.enableExtendedIndentation": true,
+	"terminal.integrated.env.windows": {
+		"PATH": "C:\\Haxe\\Haxe500-0e71626\\haxe;${env:PATH}"
+	}
+}
